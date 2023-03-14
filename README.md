@@ -41,9 +41,4 @@ set key value
 
 为了更加方便地解决TCP拆包粘包问题，在每次数据传输之前，添加4个Byte，也就是一个
 int(Integer)，来记录RESP数据的长度。
-
-
 所以Netty传输的数据格式就是：RESPLength + RESP。
-
-## TinyRedis业务处理流程
-![tiny-redis处理流程.png](asset/tiny-redis处理流程.png)
